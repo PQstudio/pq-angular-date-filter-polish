@@ -1,2 +1,2 @@
-pq-angular-data-filter-polish
+pq-angular-date-filter-polish
 =============================
