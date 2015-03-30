@@ -6,14 +6,16 @@
         var date;
         return function(input) {
             date = new Date(input);
-            if (date.getHours().length < 2)
+            if (date.getHours().length < 2) {
                 date.hours = '0' + date.getHours();
-            else
+            } else {
                 date.hours = '0' + date.getHours();
-            if (date.getMinutes().length < 2)
+            }
+            if (date.getMinutes().length < 2) {
                 date.minutes = '0' + date.getMinutes();
-            else
+            } else {
                 date.minutes = '0' + date.getMinutes();
+            }
             return date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear() + ' ' + date.hours + ':' + date.minutes;
         };
     });
